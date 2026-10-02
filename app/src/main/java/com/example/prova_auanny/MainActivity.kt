@@ -29,12 +29,17 @@ class MainActivity : AppCompatActivity() {
             placar.vitoriasNos = it.getInt("vitoriasNos")
             placar.vitoriasEles = it.getInt("vitoriasEles")
         }
-        val botoesNos = listOf(binding.btNos1, binding.btNos3, binding.btNos6, binding.btNos9, binding.btNos12)
-        val botoesEles = listOf(binding.btEles1, binding.btEles3, binding.btEles6, binding.btEles9, binding.btEles12)
-        listOf(1, 3, 6, 9, 12).forEachIndexed { index, pontos ->
-            botoesNos[index].setOnClickListener { pontuar(true, pontos) }
-            botoesEles[index].setOnClickListener { pontuar(false, pontos) }
-        }
+        binding.btNos1.setOnClickListener { pontuar(true, 1) }
+        binding.btNos3.setOnClickListener { pontuar(true, 3) }
+        binding.btNos6.setOnClickListener { pontuar(true, 6) }
+        binding.btNos9.setOnClickListener { pontuar(true, 9) }
+        binding.btNos12.setOnClickListener { pontuar(true, 12) }
+
+        binding.btEles1.setOnClickListener { pontuar(false, 1) }
+        binding.btEles3.setOnClickListener { pontuar(false, 3) }
+        binding.btEles6.setOnClickListener { pontuar(false, 6) }
+        binding.btEles9.setOnClickListener { pontuar(false, 9) }
+        binding.btEles12.setOnClickListener { pontuar(false, 12) }
         binding.btHistorico.setOnClickListener {
             val intent = Intent(this, HistoricoActivity::class.java)
             intent.putExtra(HistoricoActivity.VITORIAS_NOS, placar.vitoriasNos)
@@ -44,7 +49,6 @@ class MainActivity : AppCompatActivity() {
         binding.btZerar.setOnClickListener {
             placar.zerarHistorico()
             atualizarPlacar()
-            Toast.makeText(this, R.string.historico_zerado, Toast.LENGTH_SHORT).show()
         }
         atualizarPlacar()
     }

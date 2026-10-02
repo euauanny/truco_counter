@@ -8,13 +8,20 @@ class Placar {
     var vitoriasEles = 0
 
     fun adicionarPontos(nos: Boolean, pontos: Int): Boolean {
-        require(pontos in listOf(1, 3, 6, 9, 12))
-        if (nos) pontosNos += pontos else pontosEles += pontos
-        val venceu = (if (nos) pontosNos else pontosEles) >= 12
-        if (venceu) {
-            if (nos) vitoriasNos++ else vitoriasEles++
+        if (nos) {
+            pontosNos += pontos
+            if (pontosNos >= 12) {
+                vitoriasNos++
+                return true
+            }
+        } else {
+            pontosEles += pontos
+            if (pontosEles >= 12) {
+                vitoriasEles++
+                return true
+            }
         }
-        return venceu
+        return false
     }
 
     fun novaPartida() {
