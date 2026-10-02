@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="pt">
+    <string name="app_name">Marcador de Truco</string>
+    <string name="nos">Nós</string>
+    <string name="eles">Eles</string>
+    <string name="zero">0</string>
+    <string name="pontuacao">%1$d</string>
+    <string name="mais_1">+1</string>
+    <string name="mais_3">+3</string>
+    <string name="mais_6">+6</string>
+    <string name="mais_9">+9</string>
+    <string name="mais_12">+12</string>
+    <string name="historico">Histórico de jogadas</string>
+    <string name="zerar">Zerar Histórico</string>
+    <string name="historico_titulo">Histórico de Vitórias</string>
+    <string name="vitorias_nos">Nós: %1$d</string>
+    <string name="vitorias_eles">Eles: %1$d</string>
+    <string name="voltar">Voltar ao placar</string>
+    <string name="vitoria">%1$s ganhou a partida! Uma nova partida começou.</string>
+    <string name="historico_zerado">Pontuação e histórico zerados.</string>
+    <string name="nos_1">Somar 1 ponto para Nós</string>
+    <string name="nos_3">Somar 3 pontos para Nós</string>
+    <string name="nos_6">Somar 6 pontos para Nós</string>
+    <string name="nos_9">Somar 9 pontos para Nós</string>
+    <string name="nos_12">Somar 12 pontos para Nós</string>
+    <string name="eles_1">Somar 1 ponto para Eles</string>
+    <string name="eles_3">Somar 3 pontos para Eles</string>
+    <string name="eles_6">Somar 6 pontos para Eles</string>
+    <string name="eles_9">Somar 9 pontos para Eles</string>
+    <string name="eles_12">Somar 12 pontos para Eles</string>
+</resources>

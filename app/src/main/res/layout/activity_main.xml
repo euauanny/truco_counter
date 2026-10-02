@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal" android:paddingHorizontal="8dp">
+                <TextView android:id="@+id/tvNos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nos" android:textSize="20sp" android:textStyle="bold" android:labelFor="@id/tvPontosNos" />
+                <TextView android:id="@+id/tvPontosNos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="16dp" android:text="@string/zero" android:textSize="48sp" android:accessibilityLiveRegion="polite" />
+                <Button android:id="@+id/btNos1" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/mais_1" android:contentDescription="@string/nos_1" />
+                <Button android:id="@+id/btNos3" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/mais_3" android:contentDescription="@string/nos_3" />
+                <Button android:id="@+id/btNos6" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/mais_6" android:contentDescription="@string/nos_6" />
+                <Button android:id="@+id/btNos9" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/mais_9" android:contentDescription="@string/nos_9" />
+                <Button android:id="@+id/btNos12" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/mais_12" android:contentDescription="@string/nos_12" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal" android:paddingHorizontal="8dp">
+                <TextView android:id="@+id/tvEles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eles" android:textSize="20sp" android:textStyle="bold" android:labelFor="@id/tvPontosEles" />
+                <TextView android:id="@+id/tvPontosEles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="16dp" android:text="@string/zero" android:textSize="48sp" android:accessibilityLiveRegion="polite" />
+                <Button android:id="@+id/btEles1" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/mais_1" android:contentDescription="@string/eles_1" />
+                <Button android:id="@+id/btEles3" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/mais_3" android:contentDescription="@string/eles_3" />
+                <Button android:id="@+id/btEles6" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/mais_6" android:contentDescription="@string/eles_6" />
+                <Button android:id="@+id/btEles9" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/mais_9" android:contentDescription="@string/eles_9" />
+                <Button android:id="@+id/btEles12" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/mais_12" android:contentDescription="@string/eles_12" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@+id/btHistorico" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:minHeight="48dp" android:text="@string/historico" />
+        <Button android:id="@+id/btZerar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/zerar" />
+    </LinearLayout>
+</ScrollView>
